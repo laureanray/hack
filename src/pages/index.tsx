@@ -1,13 +1,13 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import type { ReactElement } from 'react'
+import { Narrow } from '../components/layouts/narrow'
+import type { NextPageWithLayout } from './_app'
 
-const Home: NextPage = () => {
+const Page: NextPageWithLayout = () => {
   return (
-    <div className="flex">
-      <h1 className='font-bold text-2xl'> Hello Next! </h1>
+    <div>
+      <h1 className='text-xl text-red-500 font-bold'> Hello world!</h1>
     </div>
-  )
-}
+)}
 
-export default Home
+
+export default Page
